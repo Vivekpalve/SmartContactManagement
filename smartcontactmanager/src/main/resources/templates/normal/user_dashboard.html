@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title th:text="${title}"></title>
+</head>
+<body>
+    <section class="banner-h d-flex justify-content-center align-items-center">
+       <div class="container">
+       	<div class="card sub_div">
+       		<a th:href="@{/user/add-contact}" class="btn mt-2 t mb-2 btn-primary btn-block text-uppercase">Add New Contact</a>
+       	</div>
+       </div>
+    </section>
+	
+</body>
+</html>
